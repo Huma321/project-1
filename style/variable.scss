@@ -1,0 +1,152 @@
+// <*****************[COLOR]*****************>
+$ts-white-color: #fff;
+$ts-home-Firefly-color: #07262C;
+$ts-Almost-Black-color: #010709;
+$ts-Medium-Aquamarine-color: #66DAB0;
+$ts-Dark-Mint-Green-color: #93EEDB;
+$ts-Orange-Salmon-color: #CF6F49;
+$ts-Charcoal-Grey-color: #3b3f43;
+$ts-slate-color: #536471;
+// <*****************[DESC]*****************>
+$ts-desc-01: clamp(10px, 2vw, 22px);
+$ts-desc-02: 21.39px;
+$ts-desc-03: clamp(11px, 2vw, 21px);
+$ts-desc-04: 19.82px;
+$ts-desc-05: 19px;
+$ts-desc-06: clamp(10px, 2vw, 18px);
+$ts-desc-07: clamp(10px, 2vw, 17px);
+$ts-desc-08: clamp(8px, 2vw, 16.53px);
+$ts-desc-09: clamp(12px, 2vw, 16px);
+$ts-desc-10: 15px;
+$ts-desc-11: clamp(8px, 2vw, 14px);
+$ts-desc-12: 13px;
+// <*****************[BREAKPOINT]*****************>
+$screen-sm-up: 576px;
+$screen-sm-down: 575px;
+// Small tablets (portrait view)
+$screen-md-up: 768px;
+$screen-md-down: 767px;
+// Tablets and small desktops
+$screen-lg-up: 992px;
+$screen-lg-down: 991px;
+// Large tablets and desktops
+$screen-xl-up: 1200px;
+$screen-xl-down: 1199px;
+// Extra Large and desktops
+$screen-xxl-up: 1400px;
+$screen-xxl-down: 1399px;
+// Small devices
+@mixin sm-up {
+    @media (min-width: #{$screen-sm-up}) {
+        @content;
+    }
+}
+
+@mixin sm-down {
+    @media (max-width: #{$screen-sm-down}) {
+        @content;
+    }
+}
+
+// Medium devices
+@mixin md-up {
+    @media (min-width: #{$screen-md-up}) {
+        @content;
+    }
+}
+
+@mixin md-down {
+    @media (max-width: #{$screen-md-down}) {
+        @content;
+    }
+}
+
+// Large devices
+@mixin lg-up {
+    @media (min-width: #{$screen-lg-up}) {
+        @content;
+    }
+}
+
+@mixin lg-down {
+    @media (max-width: #{$screen-lg-down}) {
+        @content;
+    }
+}
+
+// Extra large devices
+@mixin xl-up {
+    @media (min-width: #{$screen-xl-up}) {
+        @content;
+    }
+}
+
+@mixin xl-down {
+    @media (max-width: #{$screen-xl-down}) {
+        @content;
+    }
+}
+
+// Extra large devices
+@mixin xxl-up {
+    @media (min-width: #{$screen-xxl-up}) {
+        @content;
+    }
+}
+
+@mixin xxl-down {
+    @media (max-width: #{$screen-xxl-down}) {
+        @content;
+    }
+}
+
+// <*****************[FONT FAMILY]*****************>
+// font 01
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-style: Italic;
+    font-size: 32px;
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap');
+}
+
+$ts-font-Poppins: 'Poppins',
+sans-serif;
+// font 02
+@font-face {
+    font-family: 'Manrope';
+    font-weight: 400;
+    font-style: normal;
+    @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+}
+
+@font-face {
+    font-family: 'Manrope';
+    font-weight: 500;
+    font-style: medium;
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap');
+}
+
+@font-face {
+    font-family: 'Manrope';
+    font-weight: 600;
+    font-style: bold;
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap');
+}
+
+@font-face {
+    font-family: 'Manrope';
+    font-weight: 700;
+    font-style: bold;
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap');
+}
+
+@font-face {
+    font-family: 'Manrope';
+    font-weight: 800;
+    font-style: bold;
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+}
+
+$ts-font-Manrope: 'Manrope',
+sans-serif;
